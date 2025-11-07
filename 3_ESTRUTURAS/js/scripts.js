@@ -152,3 +152,49 @@ let r = 10;
 for (r; r > 0; r = r - 1) {
   console.log(`O r está diminuíndo: ${r}`);
 }
+
+// 13 - identação
+for (let u = 0; u < 10; u++) {
+  if (u * 2 > 10) {
+    console.log(`Maior que 10! ${u}`);
+  } else {
+    if (u / 2 === 0) {
+      console.log("deu 0");
+    }
+  }
+}
+
+// 15 - continue
+for (let s = 0; s < 10; s = s + 1) {
+  //operador resto = %
+  if (s % 2 === 0) {
+    console.log("Número par!");
+    continue;
+  }
+}
+
+// 16 - switch
+const job = "Programador";
+switch (job) {
+  case "Programador":
+    console.log("Você é um programador");
+    break;
+  case "Advogado":
+    console.log("Você é um advogado");
+    break;
+  default:
+    console.log("Profissão não encontrada");
+}
+
+// switch "errado"
+
+const l = 200;
+
+switch (l) {
+  case 200:
+    console.log("L é 200!");
+  case 100:
+    console.log("L é 100!");
+  case 10:
+    console.log("L é 10!");
+}
